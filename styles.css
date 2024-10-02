@@ -1,5 +1,10 @@
+.logo {
+    max-width: 100%; 
+}
+
 .s1{
     background-color: rgb(245, 240, 230);
+    max-width: 100%;
 }
 .s1 h2, .s1 p{
     color: black;
@@ -11,6 +16,7 @@
 .s2{
     background-image: url('https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg');
     scroll-margin-top: 60px;
+    max-width: 100%;
 }
 
 .s2 h2, .s2 p{
@@ -18,6 +24,8 @@
     font-size: 28px;
     scroll-margin-top: 50px;
 }
+
+
 
 .s1, .s2 {
     display: inline-block;
@@ -56,12 +64,14 @@
     color: white;
 }
 
-.logo{
-    max-width: 400px;
-}
 
 .s3 {
     background-color: rgb(245, 240, 230); 
+}
+
+.s3 h2{
+    font-size: 28px;
+    scroll-margin-top: 50px;
 }
 
 .grid-container {
@@ -82,4 +92,28 @@
 .grid-item p {
     font-size: 28px;
     line-height: 1.6;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar ul {
+        display: none; 
+    }
+
+    .logo img{
+        max-width: 75%; 
+
+    }
+
+    .s1 h2, .s2 h2, .s3 h2 {
+        font-size: 24px; 
+    }
+
+    .s1 p, .s2 p, .grid-item p {
+        font-size: 20px; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+        gap: 20px; /* You can also adjust the gap if needed */
+    }
 }
