@@ -113,7 +113,7 @@
     }
 
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
-        gap: 20px; /* You can also adjust the gap if needed */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
     }
 }
